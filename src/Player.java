@@ -29,14 +29,17 @@ public class Player {
         return card;
     }
 
-    public void draw (Deck deckOfCards) {
-        Card cardDrew = deckOfCards.draw();
-        //TODO Check if it should be hands.add or this.hands.add
-        this.hands.add(cardDrew);
+    public Card draw () {
+        Card card = this.hands.remove(0);
+        return card;
     }
 
     public void incrementScore () {
         //TODO Reseach keyword this.XXX
         score = score + 1;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

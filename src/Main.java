@@ -6,12 +6,9 @@ import java.util.List;
 public class Main {
     public static void main(String [] args) {
 
-
-        Player
-
-//        Deck deck = new Deck();
-//        deck.shuffle();
-//        deck.listOfCards.get(1).describe();
+        Deck deck = new Deck();
+        deck.shuffle();
+        deck.listOfCards.get(1).describe();
 
 
         List<Card> listOfCards = new ArrayList<>();

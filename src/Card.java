@@ -3,19 +3,19 @@ package src;
 public class Card {
 
 
-    String value;
+    int value;
     String name;
 
-    public Card(String value, String name) {
+    public Card(int value, String name) {
         this.value = value;
         this.name = name;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
