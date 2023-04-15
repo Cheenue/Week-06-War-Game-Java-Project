@@ -35,7 +35,6 @@ public class Player {
     }
 
     public void incrementScore () {
-        //TODO Reseach keyword this.XXX
         score = score + 1;
     }
 
