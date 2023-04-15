@@ -9,7 +9,7 @@ public class App {
         deck.shuffle();
         List<Card> hand1 = new ArrayList<>();
         List<Card> hand2 = new ArrayList<>();
-//        We created a new deck, shuffled it, and then created two hands from the new deck.
+//        I created a new deck, shuffled it, and then created two hands from the new deck.
 
         for( int i = 0; i < 52; i++){
             if ( i % 2 == 0) {
@@ -18,9 +18,12 @@ public class App {
                 hand2.add(deck.draw());
             }
         }
+//        In this for loop, I am interating through the 52 cards and I am giving every even card to hand1 and every odd card to hand2
 
         Player player1 = new Player(hand1, 0, "Cheenue");
         Player player2 = new Player(hand2, 0, "Kong");
+
+//        Here, I made two players by calling the Player class into the App class called player1 and player2
 
         for ( int j = 0; j < 26; j++) {
             Card player1Card = player1.flip();
@@ -36,6 +39,9 @@ public class App {
             }
         }
 
+//        I made a for loop to flip the first card of each player's hands and then if player1's hand had a higher value than player2,
+//        player1 would win, but if not, player 2 would win, or they could tie if both values were the same.
+
         if (player1.getScore() > player2.getScore()) {
             System.out.println("Player 1 wins the game!");
         } else if (player2.getScore() > player1.getScore()) {
@@ -43,6 +49,9 @@ public class App {
         } else {
             System.out.println("The game is tied and you both win!");
         }
+
+//        At the very end of the game, if player1's score of having more cards than player2 then player1 would win, same thing would
+//        happen if player2 won, otherwise they both would tie at the end.
 
     }
 }

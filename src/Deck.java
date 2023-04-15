@@ -22,8 +22,10 @@ public class Deck {
 
         }
 
-
     }
+
+//    by calling this Deck, it would also include this constructor every time it is called.
+//    a for loop would go through each time and find the card with a value and a name and add it to listOfCards
 
     Deck(List<Card> cards) {
         listOfCards = cards;

@@ -37,6 +37,7 @@ public class Player {
     public void incrementScore () {
         score = score + 1;
     }
+//    this will keep incrementing the score by one when a player wins
 
     public int getScore() {
         return score;
